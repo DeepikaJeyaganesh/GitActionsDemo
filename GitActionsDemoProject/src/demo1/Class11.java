@@ -10,7 +10,7 @@ public class Class11 {
 		int a=sc.nextInt();
 		int b=sc.nextInt();
 		int result=a+b;
-		System.out.println("Answer is "+result);
+		System.out.println("Answer is     "+result);
 	}
 
 }
