@@ -16,18 +16,18 @@ jobs:
           sudo apt-get install openjdk-11-jre-headless -y
           export JAVA_HOME=/usr/lib/jvm/java-11
       - name: Compile Java program
-        run: javac GitActionsDemoProject/src/demo1/Class11.java
+        run: javac GitActionsDemo/src/demo/Addition.java
 
       - name: Run Java program and capture output
         run: |
-         echo "10 20" | java -cp GitActionsDemoProject/src demo1.Class11 | tee -a GitActionsDemoProject/saveoutput.txt
+         echo "10 20" | java -cp GitActionsDemo/src demo.Addition | tee -a GitActionsDemo/saveoutput.txt
       - name: Display output
-        run: cat GitActionsDemoProject/saveoutput.txt
+        run: cat GitActionsDemo/saveoutput.txt
 
       - name: Commit and Push Output
         run: |
           git config --global user.email "kdeepika101@gmail.com"
           git config --global user.name "DeepikaJeyaganesh"
-          git add GitActionsDemoProject/saveoutput.txt
+          git add GitActionsDemo/saveoutput.txt
           git commit -m "Add output.txt"
           git push
