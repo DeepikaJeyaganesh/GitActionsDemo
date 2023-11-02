@@ -10,7 +10,7 @@ public class Addition {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = a + b;
-		System.out.println("result final test is " + c);
+		System.out.println("result final test12 is " + c);
 	}
 
 }
